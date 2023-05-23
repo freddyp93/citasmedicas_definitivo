@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citasmedicas.Ingreso"
+             NavigationPage.HasNavigationBar="False"> <!--desactivo la navegacion-->
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="FloralWhite">
+                <Label Text="Ingreso de Pacientes " x:Name="lblTexto1" FontSize="30" TextColor="#633974" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Label Text="             "/>
+                <Label Text="CITAS ASIGNADAS" TextColor="Black" FontSize="18" HorizontalTextAlignment="Center"/>
+                <Button x:Name="btnConsultarCitas" Text="CONSULTAR CITAS" Clicked="btnConsultarCitas_Clicked"/>
+
+                <Button x:Name="btnregistrarpaciente" Text="Registrar paciente" Clicked="btnregistrarpaciente_Clicked" />
+                    <Button x:Name="btnsolicitarcita" Text="Solicitar Cita" Clicked="btnsolicitarcita_Clicked" />
+                    <Button x:Name="btncancelarcita" Text="Cancelar cita" Clicked="btncancelarcita_Clicked" />
+              
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

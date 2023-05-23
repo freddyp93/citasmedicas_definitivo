@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citasmedicas.registroPaciente"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="FloralWhite">
+            <Label Text="REGISTRO DE PACIENTE" HorizontalTextAlignment="Center" FontSize="30" TextColor="#633974" FontAttributes="Bold" />
+            <Label Text="Ingrese los datos del paciente" HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" />
+            <Grid>
+                <Label Text="Nombre" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtNombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+                
+                <Label Text="Apellido" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtApellido" Placeholder="Apellido" Grid.Row="1" Grid.Column="1"/>
+                
+                <Label Text="Cedula" VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtCedula" Placeholder="Cedula" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Historia Clínica" VerticalTextAlignment="Center" Grid.Row="3" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtHistoria" Placeholder="Nombre" Grid.Row="3" Grid.Column="1"/>
+
+                <Label Text="Mail" VerticalTextAlignment="Center" Grid.Row="4" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtMail" Placeholder="Mail" Grid.Row="4" Grid.Column="1"/>
+                
+                <Label Text="Telefono" VerticalTextAlignment="Center" Grid.Row="5" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtTelefono" Placeholder="Telefono" Grid.Row="5" Grid.Column="1"/>
+                
+                <Label Text="Edad" VerticalTextAlignment="Center" Grid.Row="6" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtEdad" Placeholder="Edad" Grid.Row="6" Grid.Column="1"/>
+                
+                <Label Text="Especialidad" VerticalTextAlignment="Center" Grid.Row="7" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txtEspecialidad" Placeholder="Direccion" Grid.Row="7" Grid.Column="1"/>
+
+                <Label Text="Horario" VerticalTextAlignment="Center" Grid.Row="8" Grid.Column="0" FontSize="20" />
+                <Entry x:Name="txthorario" Placeholder="Nombre" Grid.Row="8" Grid.Column="1"/>
+
+            </Grid>
+            <Button x:Name="registrarfoto" Text="Registre su foto" Clicked="registrarfoto_Clicked"/>
+            <Button x:Name="Guardar" Text="Guardar" Clicked="Guardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

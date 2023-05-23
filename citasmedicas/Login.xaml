@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citasmedicas.Login"
+             NavigationPage.HasNavigationBar="False"> <!--desactivo la navegacion-->
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="FloralWhite">
+                <Label Text="BIENVENIDOS CENTRO MÉDICO CENTE" FontSize="30" TextColor="#633974" FontAttributes="Bold"  HorizontalTextAlignment="Center"/>
+                <Image Source="logo_cente_def.jpg" WidthRequest="100" HeightRequest="100"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="USUARIO" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtUsuario" Placeholder="USUARIO" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="CONTRASENA" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtContrasena" Placeholder="CONTRASEÑA" Grid.Row="1" Grid.Column="1" IsPassword="True"/>
+                </Grid>
+                <Button x:Name="btnIngresar" Text="INGRESAR" Clicked="btnIngresar_Clicked"/>
+                <Grid>
+                    <Label Text="Registrarse con gmail" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Button x:Name="btnRegistroGmail" Text="REGISTRESE CON GMAIL" Clicked="btnRegistroGmail_Clicked" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Ingresar con gmail" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Button x:Name="btnIngresoGmail" Text="INGRESE CON GMAIL" Clicked="btnIngresoGmail_Clicked"  Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+                <Label Text="Si no posee gmail registrarse abajo" HorizontalTextAlignment="Center"/>
+                    <Button x:Name="btnRegistro" Text="REGISTRESE AQUÍ" Clicked="btnRegistro_Clicked"/>
+                    <Button x:Name="btnOcontrasena" Text="OLVIDO SU CONTRASEÑA" Clicked="btnOcontrasena_Clicked"/>
+                    <!--agrego boton para registrarse con gmail-->
+                    
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

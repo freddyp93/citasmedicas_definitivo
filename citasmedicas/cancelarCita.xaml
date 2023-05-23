@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citasmedicas.cancelarCita"
+             NavigationPage.HasNavigationBar="False"> <!--desactivo la navegacion de la pantalla-->
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="FloralWhite">
+            <Label Text="CANCELAR CITA" HorizontalTextAlignment="Center" FontSize="30" TextColor="#633974" FontAttributes="Bold" />
+            <Image Source="logo_cente_def.jpg" WidthRequest="100" HeightRequest="100"/>
+            <Label Text="Observacion" HorizontalTextAlignment="Center" FontSize="18" TextColor="Black" />
+            <Picker x:Name="picker"
+        Title="Motivo de cancelación de cita" HorizontalTextAlignment="Center"
+        TitleColor="Red">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>No existe permiso laboral</x:String>
+                        <x:String>No se encuentra en la ciudad</x:String>
+                        <x:String>No dispone de tiempo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="txtObservacion" HorizontalTextAlignment="Center" Placeholder="Describa el motivo de la cancelacion"/>
+            <Button x:Name="Cancelar" Text="Cancelar" Clicked="Cancelar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

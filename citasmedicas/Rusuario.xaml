@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citasmedicas.Rusuario"
+             NavigationPage.HasNavigationBar="False"> <!--desactivo el navigation bar-->
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="FloralWhite">
+                <Label Text="Sg " x:Name="lblTexto" FontSize="30" TextColor="#633974" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="NOMBRE" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNombre" Placeholder="NOMBRE" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="APELLIDO" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" />
+                    <Entry x:Name="txtapellido" Placeholder="APELLIDO" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="CEDULA" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtcedula" Placeholder="CEDULA" Grid.Row="2" Grid.Column="1" />
+                    <Label Text="MAIL" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtmail" Placeholder="MAIL" Grid.Row="2" Grid.Column="1" />
+                    <Label Text="TELEFONO" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txttelefono" Placeholder="TELEFONO" Grid.Row="2" Grid.Column="1" />
+                    <Label Text="EDAD" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtedad" Placeholder="EDAD" Grid.Row="2" Grid.Column="1" />
+                    <Button x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked" Grid.Row="4" Grid.Column="0"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

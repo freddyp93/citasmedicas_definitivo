@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="citasmedicas.Registro_gmail"
+             NavigationPage.HasNavigationBar="False"> <!--navegacion deshabilitada-->
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="FloralWhite">
+            <Label Text="REGISTRO DE USUARIO" HorizontalTextAlignment="Center" FontSize="30" FontAttributes="Bold" TextColor="#633974"/>
+            <Grid>
+                <!--defino las filas del grid-->
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!--defino las columnas del grid-->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!--agrego los campos al grid-->
+                <Label Text="NOMBRE:" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="APELLIDO:" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtapellido" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="CÉDULA:" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtcedula" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="TELÉFONO:" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txttelefono" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+                <Label Text="EDAD:" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtedad" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
+
+                <!--botones de registrar y regresar-->
+             
+            </Grid>
+            <!--AGREGO BOTON PARA REGISTRAR CON GMAIL-->
+            <Button x:Name="btnRegistrarg" Text="REGISTRAR CON GMAIL" Clicked="btnRegistrarg_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
