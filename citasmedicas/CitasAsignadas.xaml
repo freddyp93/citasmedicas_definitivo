@@ -18,8 +18,10 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
+                    
+                    <!--esto es un comentario-->
 
-                </Grid.ColumnDefinitions>
+                </Grid.ColumnDefinitions> 
 
                 <Label Text="Nombre" FontSize="16" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
                 <Label Text="Apellido" FontSize="16" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
